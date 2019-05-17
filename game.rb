@@ -20,7 +20,7 @@ class Game
         return choice
     end
 
-    # check is user input is valid
+    # check whether the user input is valid
     def is_valid_input(input)
         if input == "rock" || input == "paper" || input == "scissors" || input == "lizard" || input == "spock"
             return true
@@ -71,7 +71,7 @@ class Game
         puts("Welcome to rock, paper, scissors, lizard, spock game")
         puts("Please enter your choice")
         
-        # a user has 3 chance for invalid input
+        # a user has 3 chances for an invalid input
         is_valid = false
         user_choice = gets.chomp
         user_choice = user_choice.downcase
@@ -87,7 +87,7 @@ class Game
         end
 
         if !is_valid
-            puts("You entered invalid choice for three times, game over")
+            puts("You've entered an invalid choice for three times, game over")
         else
             match_status = computer_choice.is_defeat(user_choice)
             case match_status
@@ -110,6 +110,7 @@ class Game
     end
 end
 
+# create and run a new game
 def run
     game = Game.new
     game.game_start
