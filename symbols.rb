@@ -3,9 +3,9 @@
 
 class Symbols
     def initialize(name, defeat1, defeat2)
-		@name = name
-		@defeat1 = defeat1 
-		@defeat2 = defeat2
+        @name = name
+        @defeat1 = defeat1 
+        @defeat2 = defeat2
     end
     
     def get_name
