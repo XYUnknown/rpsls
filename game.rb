@@ -34,7 +34,7 @@ class Game
         case symbol1 
         when "rock"
             if symbol2 == "lizard"
-				return "Rock crushes Lizard."
+                return "Rock crushes Lizard."
             else
                 return "Rock cruches Scissors."
             end
